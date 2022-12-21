@@ -33,7 +33,7 @@ export default function App() {
         Open up App.js to start working on your app1!
       </Text>
       <Text style={styles.text3}>
-        Open up App.js to start working on your app1!
+        Open up App.js to start working on your app1213!
       </Text>
       <StatusBar style="auto" />
     </View>
