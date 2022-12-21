@@ -3,6 +3,9 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
+import { globalFonts } from "./assets/styles";
+import { Header } from "./src/components/Header/Header";
+import styled from "styled-components";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -23,9 +26,14 @@ export default function App() {
     return null;
   }
 
+  const TextFont = styled.Text`
+    font-family: ${globalFonts.bold};
+    font-size: 30;
+  `;
+
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
-      <Text>Open up App.js to start working on your app1!</Text>
+      <TextFont>Open up App.js to start working on your app1213!</TextFont>
       <Text style={styles.text1}>
         Open up App.js to start working on your app1!
       </Text>
@@ -35,6 +43,7 @@ export default function App() {
       <Text style={styles.text3}>
         Open up App.js to start working on your app1213!
       </Text>
+      <Header />
       <StatusBar style="auto" />
     </View>
   );
@@ -49,7 +58,7 @@ const styles = StyleSheet.create({
     fontSize: "20px",
   },
   text1: {
-    fontFamily: "Inter-Bold",
+    // fontFamily: `${primaryFont}`,
   },
   text2: {
     fontFamily: "Inter-Regular",
