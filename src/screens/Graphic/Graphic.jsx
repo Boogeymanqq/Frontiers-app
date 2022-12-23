@@ -1,6 +1,6 @@
-import React from "react";
-import { Text } from "react-native";
+import React from 'react'
+import { Text } from 'react-native'
 
 export const Graphic = () => {
-  return <Text>Graphic</Text>;
-};
+    return <Text>Graphic</Text>
+}
